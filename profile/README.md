@@ -1,7 +1,7 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="profile/assets/logo-light.png">
-  <source media="(prefers-color-scheme: light)" srcset="profile/assets/logo-dark.png">
-  <img alt="CEDRA Interactive" src="profile/assets/logo-dark.png" width="400">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/CedraInteractive/.github/main/profile/assets/logo-light.png">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/CedraInteractive/.github/main/profile/assets/logo-dark.png">
+  <img alt="CEDRA Interactive" src="https://raw.githubusercontent.com/CedraInteractive/.github/main/profile/assets/logo-dark.png" width="400">
 </picture>
 
 &nbsp;
