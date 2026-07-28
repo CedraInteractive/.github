@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Güvenlik açığı
+    url: https://github.com/CedraInteractive/.github/security/policy
+    about: Güvenlik açıklarını issue olarak açmayın — SECURITY.md'deki yolu izleyin.
