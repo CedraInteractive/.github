@@ -1,0 +1,60 @@
+name: Hata bildirimi
+description: Yanlış çalışan bir şey
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Tek bir soruyu cevaplayabilmemiz için yeterli bilgi lazım:
+        **bunu sizin makinenizde nasıl tekrar üretiriz?**
+
+  - type: textarea
+    id: what
+    attributes:
+      label: Ne oluyor
+      description: Gözlemlenen davranış. Yorum değil, gördüğünüz şey.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Ne olmasını bekliyordunuz
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Tekrar üretme adımları
+      description: Numaralı, temiz kurulumdan başlayarak.
+      placeholder: |
+        1. Oyunu aç
+        2. Ayarlar → Yüksek kontrast'ı aç
+        3. Saga → 14. seviye
+        4. ...
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Sürüm
+      description: "`gradle.properties` içindeki `app.versionName`, ya da commit SHA'sı"
+    validations:
+      required: true
+
+  - type: input
+    id: device
+    attributes:
+      label: Cihaz / ortam
+      placeholder: "Pixel 6a, Android 15 — ya da: masaüstü, Windows 11"
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Log / ekran görüntüsü
+      description: "`adb logcat` çıktısı çökmelerde çok işe yarar."
+      render: shell
