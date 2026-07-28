@@ -1,0 +1,39 @@
+name: Özellik önerisi
+description: Olmayan bir şey
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Hangi sorunu çözüyor
+      description: >
+        Çözümle değil sorunla başlayın. Bir özellik isteği hangi ihtiyacın
+        karşılanmadığını söylemiyorsa değerlendirilemez.
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Öneri
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Denenen / düşünülen alternatifler
+      description: Mevcut hâliyle neden yetmiyor?
+
+  - type: dropdown
+    id: scope
+    attributes:
+      label: Nereye ait
+      options:
+        - Oyun içeriği (mekanik, seviye, ekonomi)
+        - Arayüz / görsel
+        - Motor (oyundan bağımsız)
+        - Build / CI
+        - Diğer
+    validations:
+      required: true
